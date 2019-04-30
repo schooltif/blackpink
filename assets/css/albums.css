@@ -1,0 +1,193 @@
+
+  body {
+    font-family: Helvetica;
+    background-color: black;
+  }
+
+  .navbar {
+  	background: black;
+  	position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    color: #ecaac5;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
+  .who:hover{
+    background: #ee7eab;
+  	color: #f2f2f2;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .box a {
+    float: left;
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 60px;
+  }
+
+  .box {
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    background: #ecaac5;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .box:hover {
+    opacity: 1;
+    transform: rotate(360deg);
+    border-radius: 25px;
+    background: #ee7eab;
+    border: 3px solid black;
+    cursor: pointer;
+  }
+
+  #profile {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -95%);
+  }
+
+  #text {
+    display: relative;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    transform: translate(-90%;-70%);
+  }
+
+  #text a{
+    text-decoration: none;
+    color: #ecaac5;
+  }
+
+  #home:hover{
+    text-decoration: underline;
+    color: #ee7eab;
+    opacity: 1;
+    transform: scale(1.2);
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  h1 {
+    text-shadow: 5px 5px 5px black;
+    background: black;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: #ecaac5;
+  }
+
+  .shape {
+  	height: 200px;
+  	width: 330px;
+  	position: absolute;
+    right: -35%;
+    bottom: -25%;
+  	border-radius: 0px;
+  	animation-name: hello;
+  	animation-duration: 2s;
+  	animation-iteration-count: infinite;
+  	animation-direction: normal;
+  }
+
+    @keyframes hello{
+    	0% {transform: scale(0);
+    				opacity: 1;
+          background-color: black;}
+    	50% {transform: scale(1);
+    				opacity: 0;
+          background-color: #ecaac5;}
+      100% {transform: scale(0);
+            opacity: 1;
+          background-color: black;}
+    }
+
+
+
+  h3 {
+    background: black;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: #ee7eab;
+    font-size: 13px;
+  }
+
+
+  body, html {
+      font-family: Helvetica;
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+  }
+
+
+  * {box-sizing:border-box}
+
+  /* music slideshow */
+  #music-slideshow {
+    max-width: 50%;
+
+    position: relative;
+    margin-left: 25%;
+    display: inline-block;
+    align-items: center;
+    background-color: black;
+  }
+
+
+
+  .music{
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0.1};
+    to {opacity: 1};
+  }
+
+  .image{
+    max-height: 600px;
+  }
+
+
+/* Caption text */
+
+.mv {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 40%;
+  text-align: right;
+  font-size: 15px;
+}
+
+.mv:hover{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
